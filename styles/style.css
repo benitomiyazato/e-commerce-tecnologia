@@ -24,9 +24,19 @@ body {
 nav {
   display: flex;
   justify-content: center;
-  gap: 3rem;
   background-color: var(--color2);
-  padding: 0.3rem;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.nav-link {
+  padding: 0.3rem 2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.212);
+}
+
+.nav-link:hover {
+  background-color: var(--color3);
+  transition-duration: 200ms;
 }
 
 a {
@@ -35,9 +45,14 @@ a {
   color: white;
 }
 
+a:hover {
+  text-decoration: underline;
+  transition-duration: 200ms;
+}
+
 .search-bar {
   display: flex;
-  height: 8rem;
+  height: 7rem;
   width: 100vw;
   gap: 1rem;
   justify-content: space-around;
@@ -63,8 +78,8 @@ a {
   border: 0px;
 }
 .search-input::placeholder {
-    padding-left: .5rem;
-  }
+  padding-left: 0.5rem;
+}
 
 .sign-up {
   flex-basis: 8%;
