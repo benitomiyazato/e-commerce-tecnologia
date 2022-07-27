@@ -82,5 +82,25 @@ a:hover {
 }
 
 .sign-up {
-  flex-basis: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
+  font-weight: 500;
+  flex-basis: 9%;
+}
+
+.sign-up i {
+  padding-right: 1rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 10%;
+}
+
+.icons i {
+  cursor: pointer;
+  font-size: 1.2em;
 }
