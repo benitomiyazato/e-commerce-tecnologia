@@ -27,6 +27,7 @@ nav {
   background-color: var(--color2);
   text-transform: uppercase;
   font-size: 0.8em;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.411);
 }
 
 .nav-link {
@@ -76,9 +77,20 @@ a:hover {
   padding: 0.5rem;
   border-radius: 5px;
   border: 0px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
 }
 .search-input::placeholder {
   padding-left: 0.5rem;
+}
+
+.search-input:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.418);
+  transition-duration: 350ms;
+}
+
+.search-input:focus {
+  outline: 0px;
 }
 
 .sign-up {
@@ -92,6 +104,7 @@ a:hover {
 
 .sign-up i {
   padding-right: 1rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
 }
 
 .icons {
@@ -103,4 +116,5 @@ a:hover {
 .icons i {
   cursor: pointer;
   font-size: 1.2em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
 }
