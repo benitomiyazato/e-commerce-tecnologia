@@ -162,8 +162,13 @@ a:hover {
   transition-duration: 250ms;
 }
 
-.product img {
-  margin-top: 1rem;
+.img-produto-container {
+  display: grid;
+  justify-content: center;
+}
+
+.img-produto-container i {
+  justify-self: end;
 }
 
 .info-produto {
