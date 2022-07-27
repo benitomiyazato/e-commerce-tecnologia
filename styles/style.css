@@ -16,6 +16,7 @@
   --color4: #ccdfef;
   --color5: #e2edf7;
   --dark-font-color: #44484f;
+  --light-font-color: #7f858d;
 }
 
 body {
@@ -161,6 +162,10 @@ a:hover {
   transition-duration: 250ms;
 }
 
+.product img {
+  margin-top: 1rem;
+}
+
 .info-produto {
   padding: 0.3rem;
   display: flex;
@@ -181,4 +186,26 @@ a:hover {
   border: 1px solid var(--color3);
   border-radius: 5px;
   padding: 0.2rem;
+}
+
+.nome-produto {
+  color: var(--dark-font-color);
+  font-weight: bold;
+}
+
+.preco-riscado {
+  color: var(--light-font-color);
+  text-decoration: line-through;
+  font-size: 0.8em;
+}
+
+.preco-promo {
+  color: var(--color2);
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+.metodo-desconto {
+  color: var(--light-font-color);
+  font-size: 0.9em;
 }
