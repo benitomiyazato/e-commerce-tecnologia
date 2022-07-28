@@ -148,21 +148,39 @@ main {
   margin: 2rem auto;
   background-color: #f0f0f0;
   border-radius: 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.192);
 }
 
-.promo-semana div.product {
-  flex-basis: 20%;
-}
-
-.promo-semana header {
+.promo-semana header,
+.em-alta header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.promo-semana header {
   background-color: var(--color2);
   color: white;
   padding: 1rem 2rem 1rem 1rem;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+}
+
+hr {
+  margin: 3rem 0;
+  height: 1rem;
+  background-color: var(--color4);
+  border: 0;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.192);
+}
+
+.em-alta header {
+  color: var(--dark-font-color);
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.em-alta i {
+  color: var(--color2);
 }
 
 .container-products {
@@ -177,6 +195,7 @@ main {
   background: white;
   border-radius: 8px;
   padding: 0.5rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
 }
 
 .product i {
