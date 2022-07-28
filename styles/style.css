@@ -152,7 +152,8 @@ main {
 }
 
 .promo-semana header,
-.em-alta header {
+.em-alta header,
+.departamentos header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -174,12 +175,14 @@ hr {
   box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.192);
 }
 
-.em-alta header {
+.em-alta header,
+.departamentos header {
   color: var(--dark-font-color);
   padding: 0rem 1rem 1rem 1rem;
 }
 
-.em-alta i {
+.em-alta i,
+.departamentos i {
   color: var(--color2);
 }
 
@@ -191,11 +194,12 @@ hr {
   padding: 0.5rem;
 }
 
-.product {
+.product,
+.departamento {
   background: white;
   border-radius: 8px;
   padding: 0.5rem;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
 }
 
 .product i {
@@ -286,6 +290,29 @@ hr {
   transition-duration: 250ms;
 }
 
+.departamentos * {
+  text-transform: uppercase;
+}
+
+.container-departamentos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.departamento h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.img-departamento-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
 @media (max-width: 1000px) {
   .img-container,
   .sign-up,
@@ -354,5 +381,11 @@ hr {
     position: fixed;
     top: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 810px) {
+  .container-departamentos {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
