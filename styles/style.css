@@ -22,7 +22,6 @@
 }
 
 body {
-  height: 100vh;
   font-family: var(--font1);
   background-image: linear-gradient(to bottom, var(--color4), var(--color5));
 }
@@ -152,6 +151,7 @@ main {
   width: 90%;
   margin: 2rem auto;
   background-color: #f0f0f0;
+  border-radius: 8px;
 }
 
 .promo-semana div.product {
@@ -165,6 +165,8 @@ main {
   background-color: var(--color2);
   color: white;
   padding: 1rem 2rem 1rem 1rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .container-products {
@@ -326,5 +328,4 @@ main {
   .hamburguer-menu {
     outline: 1px solid black;
   }
-
 }
