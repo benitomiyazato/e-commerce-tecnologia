@@ -142,7 +142,7 @@ main {
 
 .container-products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
   justify-content: space-evenly;
   gap: 1rem;
   padding: 0.5rem;
@@ -197,6 +197,10 @@ main {
   padding: 0.2rem;
 }
 
+.info-produto {
+  min-height: 7.5rem;
+}
+
 .nome-produto {
   color: var(--dark-font-color);
   font-weight: bold;
@@ -216,5 +220,24 @@ main {
 
 .metodo-desconto {
   color: var(--light-font-color);
+  font-size: 0.8em;
+}
+
+.comprar-btn {
+  display: flex;
+  margin-top: .5rem;
+  justify-content: flex-start;
+  padding-left: 25%;
+  align-items: center;
+  font-weight: bold;
   font-size: 0.9em;
+  background-color: var(--color2);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.comprar-btn:hover {
+  background-color: var(--color3);
+  transition-duration: 250ms;
 }
