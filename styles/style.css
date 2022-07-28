@@ -165,6 +165,7 @@ main {
   align-items: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
 }
 
 .promo-semana header {
@@ -208,6 +209,12 @@ hr {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
 }
 
+.product:hover {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.26);
+  transform: translate(-2px, -2px);
+  transition: 250ms;
+}
+
 .product i {
   font-size: 1.2em;
   margin: 0.5rem;
@@ -240,6 +247,7 @@ hr {
   border-radius: 5px;
   padding: 0.2rem;
   color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.432);
 }
 
 .estoque {
@@ -249,6 +257,7 @@ hr {
   border: 1px solid var(--color3);
   border-radius: 5px;
   padding: 0.2rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.185);
 }
 
 .info-produto {
@@ -288,6 +297,7 @@ hr {
   color: white;
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.616);
 }
 
 .comprar-btn i {
@@ -311,9 +321,17 @@ hr {
   padding: 0.5rem;
 }
 
+.departamento:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.397);
+  transition: 250ms;
+}
+
 .departamento h1 {
   text-align: center;
   margin: 1rem 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+  color: #003a6a;
 }
 
 .img-departamento-container {
