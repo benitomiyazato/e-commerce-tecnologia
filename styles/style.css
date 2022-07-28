@@ -55,11 +55,6 @@ body {
   list-style-type: none;
 }
 
-.nav-menu li:hover {
-  background-color: var(--color6);
-  transition-duration: 250ms;
-}
-
 .hamburguer-menu,
 .cart-icon {
   font-size: 1.5em;
@@ -311,7 +306,7 @@ main {
     margin-top: 1rem;
     padding: 2rem;
     gap: 1rem;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     position: fixed;
@@ -319,8 +314,17 @@ main {
     top: 70px;
 
     width: 100%;
-    text-align: center;
+    text-align: justify;
     transition-duration: 220ms;
+  }
+
+  .nav-menu i {
+    padding-right: 1rem;
+    width: 25px;
+  }
+
+  .nav-menu li {
+    margin-top: 1rem;
   }
 
   .nav-menu.active {
