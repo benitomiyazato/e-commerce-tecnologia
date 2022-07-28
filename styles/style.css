@@ -44,6 +44,11 @@ nav {
   transition-duration: 200ms;
 }
 
+.hamburguer-menu {
+  font-size: 2em;
+  display: none;
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
@@ -55,30 +60,36 @@ a:hover {
   transition-duration: 200ms;
 }
 
-.search-bar {
+.main-header {
   display: flex;
   height: 7rem;
   width: 100vw;
   gap: 1rem;
+  padding: 1rem;
   justify-content: space-around;
   align-items: center;
   background: var(--color1);
   color: var(--color4);
 }
 
-.img-container {
+.logo-grande {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-basis: 20%;
 }
 
+.logo-pequeno {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+}
 .logo {
   height: 100px;
 }
 
 .search-input {
-  flex-basis: 35%;
+  flex-basis: 71%;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 0px;
@@ -225,7 +236,7 @@ main {
 
 .comprar-btn {
   display: flex;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   justify-content: flex-start;
   padding-left: 25%;
   align-items: center;
@@ -240,4 +251,32 @@ main {
 .comprar-btn:hover {
   background-color: var(--color3);
   transition-duration: 250ms;
+}
+
+@media (max-width: 1000px) {
+  .img-container,
+  .sign-up,
+  .icons,
+  .main-nav-bar,
+  .logo-grande {
+    display: none;
+  }
+  
+  .hamburguer-menu {
+    display: block;
+    flex-basis: 10%;
+  }
+
+  .search-input {
+    flex-basis: 80%;
+  }
+
+  .logo-pequeno {
+    margin-left: .5rem;
+    flex-basis: 10%;
+    display: flex;
+  }
+  .logo-pequeno img{
+    height: 50px;
+  }
 }

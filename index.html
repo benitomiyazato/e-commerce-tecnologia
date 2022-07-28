@@ -7,7 +7,8 @@
         hover icons header principal
         novos produtos
         ----------------------------------
-        botão comprar nos itens
+
+        flex-basis header principal
 
     -->
     <meta charset="UTF-8" />
@@ -22,8 +23,11 @@
   </head>
   <body>
     <header>
-      <section class="search-bar">
-        <div class="img-container">
+      <section class="main-header">
+        <div class="logo-pequeno">
+          <img class="logo" src="images/logotipo-pequeno.png" alt="Logotipo" />
+        </div>
+        <div class="logo-grande">
           <img class="logo" src="images/logotipo.png" alt="Logotipo" />
         </div>
         <input
@@ -48,8 +52,9 @@
             ><i class="fa-solid fa-cart-shopping"></i
           ></abbr>
         </div>
+        <i class="fa-solid fa-bars hamburguer-menu" id="hamburguer-menu"></i>
       </section>
-      <nav>
+      <nav class="main-nav-bar">
         <a href="#" class="nav-link">Todos os departamentos</a>
         <a href="#" class="nav-link">Lançamentos</a>
         <a href="#" class="nav-link">Destaques</a
