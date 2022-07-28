@@ -60,8 +60,9 @@ body {
   transition-duration: 250ms;
 }
 
-.hamburguer-menu {
-  font-size: 2em;
+.hamburguer-menu,
+.cart-icon {
+  font-size: 1.5em;
   display: none;
 }
 
@@ -281,8 +282,15 @@ main {
   }
 
   .hamburguer-menu {
-    display: block;
+    display: flex;
+    justify-content: center;
     flex-basis: 10%;
+  }
+
+  .cart-icon {
+    display: flex;
+    justify-content: center;
+    flex-basis: 5%;
   }
 
   .search-input {
@@ -291,7 +299,7 @@ main {
 
   .logo-pequeno {
     margin-left: 0.5rem;
-    flex-basis: 10%;
+    flex-basis: 5%;
     display: flex;
   }
   .logo-pequeno img {
@@ -323,9 +331,5 @@ main {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-
-  .hamburguer-menu {
-    outline: 1px solid black;
   }
 }
