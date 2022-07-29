@@ -411,6 +411,60 @@ hr {
   }
 }
 
+footer {
+  background: var(--color1);
+  color: var(--color5);
+  font-size: 0.8em;
+}
+
+footer h1 {
+  font-size: 1.1em;
+}
+
+footer h2 {
+  font-size: 1.1em;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  color: var(--color5);
+  font-weight: normal;
+}
+
+footer a:hover {
+  color: var(--color4);
+  text-decoration: underline;
+}
+
+.footer-listas {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.lista-atendimento,
+.lista-departamento {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  text-align: center;
+  background: var(--color6);
+  color: var(--color4);
+  padding: .6rem;
+  font-weight: bold;
+}
+
+.copyright a {
+  font-weight: bold;
+  color: white;
+}
+
 @media (max-width: 810px) {
   .container-departamentos {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
