@@ -443,7 +443,7 @@ footer a:hover {
   padding: 1rem;
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 8rem;
 }
 
 .lista-atendimento,
@@ -477,7 +477,7 @@ footer a:hover {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .footer-listas {
     gap: 4rem;
   }
