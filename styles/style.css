@@ -456,7 +456,7 @@ footer a:hover {
   text-align: center;
   background: var(--color6);
   color: var(--color4);
-  padding: .6rem;
+  padding: 0.6rem;
   font-weight: bold;
 }
 
@@ -475,8 +475,10 @@ footer a:hover {
   .cart-icon {
     display: none;
   }
+}
 
+@media (max-width: 550px) {
   .footer-listas {
-    gap: 3rem;
+    gap: 4rem;
   }
 }
